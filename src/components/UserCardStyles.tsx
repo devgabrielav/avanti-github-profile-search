@@ -6,55 +6,71 @@ export const UserCardDiv = styled.div`
   border-radius: 25px;
   display: flex;
   gap: 50px;
-  height: 257px;
+  height: 40vh;
   justify-content: center;
-  left: 318px;
-  top: 380px;
-  width: 804px;
+  position: relative;
+  top: 18vh;
+  width: 60vw;
+`;
+
+export const NotFoundDiv = styled.div`
+  align-items: center;
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  height: 20vh;
+  position: relative;
+  top: 18vh;
+  border-radius: 10px;
+`;
+
+export const NotFoundMessage = styled.p`
+  color: #FF0000;
+  width: 42vw;
+  height: 5vh;
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
 `;
 
 export const UserImage = styled.img`
   border: 2px solid #005CFF;
   border-radius: 50%;
-  height: 220px;
-  left: 300px;
-  top: 380px;
-  width: 220px;
+  height: 28vh;
+  width: 16vw;
 `;
 
 export const BioNameDiv = styled.div`
   align-items: start;
   display: flex;
   flex-direction: column;
-  height: 123px;
+  height: 15vh;
   justify-content: center;
-  left: 603px;
-  top: 448px;
-  width: 448px;
+  width: 35vw;
 `;
 
 export const Name = styled.p`
+  color: #005CFF;
   font-family: 'Nunito Sans';
   font-size: 20px;
   font-weight: 700;
-  height: 27px;
-  left: 603px;
+  height: 3vh;
   letter-spacing: 0%;
   line-height: 100%;
-  top: 448px;
-  width: 130px;
 `;
 
 export const Bio = styled.p`
   align-items: center;
   display: flex;
   font-family: 'Nunito Sans';
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
-  height: 80px;
-  left: 603px;
+  height: 20vh;
   letter-spacing: 0%;
   line-height: 100%;
-  top: 491px;
-  width: 448px;
+  width: 33vw;
 `;

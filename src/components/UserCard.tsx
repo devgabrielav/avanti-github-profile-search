@@ -1,20 +1,30 @@
 import { UserType } from "../utils/githubFunctions";
-import { Bio, BioNameDiv, Name, UserCardDiv, UserImage } from "./UserCardStyles";
+import { Bio, BioNameDiv, Name, NotFoundDiv, NotFoundMessage, UserCardDiv, UserImage } from "./UserCardStyles";
 
 type UserCardType = {
-  user: UserType;
+  user?: UserType;
 }
 
 function UserCard({user}: UserCardType) {
-
   return (
-    <UserCardDiv>
-      <UserImage src={user.avatar_url} />
-      <BioNameDiv>
-        <Name>{ user.name }</Name>
-        <Bio>{ user.bio }</Bio>
-      </BioNameDiv>
-    </UserCardDiv>
+    <>
+    {user ? (
+      <UserCardDiv>
+        <UserImage src={user.avatar_url} />
+        <BioNameDiv>
+          <Name>{ user.name }</Name>
+          <Bio>{ user.bio }</Bio>
+        </BioNameDiv>
+      </UserCardDiv>
+    ) : (
+      <NotFoundDiv>
+        <NotFoundMessage>
+            Nenhum perfil foi encontrado com este nome de usuário.
+            Tente novamente
+        </NotFoundMessage>
+      </NotFoundDiv>
+    )}
+    </>
   )
 
 }

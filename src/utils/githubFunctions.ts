@@ -4,15 +4,15 @@ export type UserType = {
   bio: string;
 }
 
-export const getUserByUsername = async (username: string): Promise<UserType> => {
+export type UserNotFound = {
+  message: "Not Found",
+  documentation_url: "https://docs.github.com/rest",
+  status: "404";
+}
+
+export const getUserByUsername = async (username: string): Promise<UserType | UserNotFound> => {
   const githubRequest = await fetch(`https://api.github.com/users/${username}`);
-  const { avatar_url, bio, name } = await githubRequest.json();
-
-  const userFound: UserType = {
-    avatar_url,
-    bio: bio ? bio : `${name ? name : username} não adicionou uma bio.`,
-    name: name ? name : `${username} não adicionou um nome.`
-  }
-
-  return userFound;
+  const data: UserType | UserNotFound = await githubRequest.json();
+  
+  return data;
 }
