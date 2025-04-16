@@ -1,4 +1,4 @@
-import { UserType } from "../utils/githubFunctions";
+import { UserType } from "../../utils/githubFunctions";
 import { Bio, BioNameDiv, Name, NotFoundDiv, NotFoundMessage, UserCardDiv, UserImage } from "./UserCardStyles";
 
 type UserCardType = {

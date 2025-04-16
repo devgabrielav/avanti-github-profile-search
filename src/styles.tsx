@@ -30,76 +30,33 @@ export const Dots = styled.img`
 `;
 
 export const LeftCircle = styled.div`
-background: radial-gradient(50% 50% at 50% 50%, rgba(0, 92, 255, 0.7) 0%, rgba(0, 51, 140, 0.5) 70%, rgba(0, 11, 51, 0.050) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 92, 255, 0.7) 0%, rgba(0, 51, 140, 0.5) 70%, rgba(0, 11, 51, 0.050) 100%);
   border-radius: 50%;
-position: relative;
-width: 30vw;
-height: 60vh;
-  top: 13vh;
+  height: 60vh;
   left: -42vw;
+  position: relative;
+  top: 13vh;
+  width: 30vw;
   z-index: 1000;
 `;
 
 export const RightCircle = styled.div`
-background: radial-gradient(50% 50% at 50% 50%, rgba(0, 92, 255, 0.7) 0%, rgba(0, 51, 140, 0.5) 70%, rgba(0, 11, 51, 0.050) 100%);
-border-radius: 50%;
-width: 30vw;
-height: 60vh;
-position: relative;
-top: -45vh;
-left: 20vw;
-`;
-
-export const Form = styled.form`
-display: flex;
-border-radius: 20px;
-gap: -15px;
-position: absolute;
-left: 20vw;
-  width: 43vw;
-height: 8.3vh;
-top: 22vh;
-
-`;
-
-export const Input = styled.input`
-border-radius: 10px;
-color: #000000;
-border: none;
-height: 100%;
-width: 100%;
-outline: none;
-font-family: 'Nunito Sans';
-font-weight: 600;
-font-size: 1.25rem;
-line-height: 100%;
-letter-spacing: 0%;
-padding-left: 20px;
-position: relative;
-`;
-
-export const Button = styled.button`
-  border: none;
-  cursor: pointer;
-  width: 5vw;
-  height: 97%;
-  left: -4.65vw;
-  top: 0.07vh;
-  border-radius: 10px;
-  background-color: #005CFF;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 92, 255, 0.7) 0%, rgba(0, 51, 140, 0.5) 70%, rgba(0, 11, 51, 0.050) 100%);
+  border-radius: 50%;
+  height: 60vh;
+  left: 20vw;
   position: relative;
-`;
-
-export const ButtonImg = styled.img`
+  top: -45vh;
+  width: 30vw;
 `;
 
 export const TitleDiv = styled.div`
-align-items: center;
+  align-items: center;
   display: flex;
-  justify-content: center;
   gap: 15px;
-  width: 40vw;
   height: 12vh;
+  justify-content: center;
+  width: 40vw;
 `;
 
 export const GithubLogo = styled.img`

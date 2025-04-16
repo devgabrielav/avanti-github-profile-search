@@ -16,25 +16,25 @@ export const UserCardDiv = styled.div`
 export const NotFoundDiv = styled.div`
   align-items: center;
   background-color: #D9D9D9;
+  border-radius: 10px;
   display: flex;
-  justify-content: center;
-  width: 60vw;
   height: 20vh;
+  justify-content: center;
   position: relative;
   top: 18vh;
-  border-radius: 10px;
+  width: 60vw;
 `;
 
 export const NotFoundMessage = styled.p`
   color: #FF0000;
-  width: 42vw;
-  height: 5vh;
   font-family: 'Nunito Sans';
-  font-weight: 400;
   font-size: 20px;
-  line-height: 100%;
+  font-weight: 400;
+  height: 5vh;
   letter-spacing: 0%;
+  line-height: 100%;
   text-align: center;
+  width: 42vw;
 `;
 
 export const UserImage = styled.img`
