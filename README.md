@@ -8,7 +8,7 @@ O desafio final consiste em desenvolver uma aplicação React que permite buscar
 
 ## Tech Stack
 
-React, Typescript, Vite, Styled Components
+HTML, CSS, React, Typescript, Vite, Styled Components
 
 ## Authors
 
